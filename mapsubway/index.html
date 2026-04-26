@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>SurfMap Run</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>SURFMAP-RUN</h1>
+  <p>Treine e explore mapas personalizados</p>
+
+  <div class="tabs">
+    <button onclick="showTab('training')">Training</button>
+    <button onclick="showTab('maps')">Maps</button>
+    <button onclick="showTab('others')">Others</button>
+  </div>
+
+  <div id="training" class="tab">
+    <div class="card">
+      <h2>Mapa de Treino</h2>
+      <p>Perfeito para melhorar movimentação</p>
+      <button onclick="openMap('https://exemplo.com/mapa1')">Abrir</button>
+    </div>
+  </div>
+
+  <div id="maps" class="tab hidden">
+    <div class="card">
+      <h2>Mapa Difícil</h2>
+      <p>Desafio extremo</p>
+      <button onclick="openMap('https://exemplo.com/mapa2')">Abrir</button>
+    </div>
+  </div>
+
+  <div id="others" class="tab hidden">
+    <div class="card">
+      <h2>Mapa Especial</h2>
+      <p>Diferentão</p>
+      <button onclick="openMap('https://exemplo.com/mapa3')">Abrir</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
